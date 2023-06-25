@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="../static/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+      .button{
+        outline: none;
+        border: none;
+        padding: 5px 30px;
+        border-radius: 5px;
+        color: white;
+        background:#208a6a;
+        display:inline-block;
+        line-height:30px;
+        margin:10px;
+      }
+      .na a:hover {
+        background:#72addd;
+      }
+    </style>
+  </head>
+  <body>
+
+    <section>
+      <input type="checkbox" id="check">
+      <header>
+        <img src="../static/images/logo1.png" height="120px" width="150px" alt="IPL">
+        <div class="navigation">
+          <a href="/register">signup</a>
+          <a href="/login">login</a>
+        </div>
+        <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+        </label>
+      </header>
+      <div class="content" style="margin-top: 8%;">
+        <div class="info">
+          <h2 style="color:#16f1b0">BUDGET ESTIMATE SYSTEM<br><span></span></h2>
+          <p style="color:antiquewhite">This is a machine learning project which can be used to forecast Real Estate
+            Price Values in Mumbai's various neighborhoods. This Python Machine Learning project is based on 
+            the Linear Regression method and uses the sklearn package. The client may pick from 90 sites 
+            across Mumbai, and the model will estimate the cost of a property in that area.</p>
+        </div>
+        <div class="na">
+          <a href='#about' class="button">More info</a>
+          <a href="/register" class="button">signup</a>
+          <a href="/login" class="button">login</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 style="color:#16f1b0;">About Project</h2><br><br>
+      <p class="about-content" style="text-align: center; color:antiquewhite;">
+        1.Read and analyzed the Mumbai Home Price Dataset from kaggle.com<br>
+        2.Cleaned the dataset by undergoing various levels of data filtration in order to remove data 
+        anomalies,handling missing values etc.<br>
+        3.Used the Sklearn Linear Regression to build the model.<br>
+        4.Build a python Flask Server that uses the saved model to serve the https requests.<br>
+        5.Designed an interactive UI design for the website using HTML,CSS,JS that allows user to enter 
+        house area(sqft),location etc and using python flask server user gets the estimated price.
+      </p>
+      <br><br><br><br>
+    </section>
+    
+
+  </body>
+</html>
+
